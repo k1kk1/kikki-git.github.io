@@ -2,14 +2,18 @@ title: this is title
 
 body:
   contents1:
-    title: Self introduction
+    title: Self
+    subtitle: introduction
     text: 私は〇〇です．こんにちは！私は〇〇です．こんにちは！私は〇〇です．こんにちは！私は〇〇です．こんにちは！
   contents2:
     title: Skill
+    subtitle: professional
     text: C++
   contents3:
     title: Skill
+    subtitle: beginner
     text: PHP
   contents4:
     title: Skill
+    subtitle: general
     text: Python

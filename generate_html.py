@@ -4,13 +4,18 @@ import yaml
 class LoadText():
 	def __init__(self):
 		self.title = None
+		self.subtitle = None
 		self.list = []
 	def open_yaml(self, yml_path):
 		with open(yml_path, 'r') as yml:
 			config = yaml.load(yml, Loader=yaml.SafeLoader)
 		self.title = config["title"]
 		for key, value in config["body"].items():
-			self.list.append({'title': value["title"], 'body': value["text"]})
+			if value["subtitle"] == None:
+				subtitle = ""
+			else:
+				subtitle = value["subtitle"]
+			self.list.append({'title': value["title"], 'subtitle': subtitle, 'body': value["text"]})
 
 class Html():
 	def __init__(self):
@@ -20,7 +25,7 @@ class Html():
 		self.env = Environment(loader=FileSystemLoader('./', encoding='utf8'))
 		self.tpl = self.env.get_template(tpl_path)
 	def write_html(self, text, out_html):
-		html = self.tpl.render({'title':text.title, 'list': text.list})
+		html = self.tpl.render({'title':text.title, 'subtitle':text.subtitle, 'list': text.list})
 		file = open(out_html, 'wb')
 		file.write(html.encode('utf-8'))
 		file.close()
