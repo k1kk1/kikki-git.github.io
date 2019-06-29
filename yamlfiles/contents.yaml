@@ -4,16 +4,20 @@ body:
   contents1:
     title: Self
     subtitle: introduction
-    text: 私は〇〇です．こんにちは！私は〇〇です．こんにちは！私は〇〇です．こんにちは！私は〇〇です．こんにちは！
+    text: 東京都市大学環境情報学研究科所属 遺伝的アルゴリズムなど人工知能の研究をしており，個人の感性に即した自動作曲システムの研究・開発をしております．自身の研究では，人間によるピアノ演奏を考慮したSMF(Standard MIDI File)の生成や粒子群最適化を用いた小選挙区割の画定について研究しています．
   contents2:
     title: Skill
-    subtitle: professional
-    text: C++
+    subtitle: C/C++
+    text: メイン言語として使用しています．自動作曲システムの共同開発先でアルバイトをしており，C++を用いてシステムの改良を行なっております．低レイヤの知識に興味があり，MIDIの読み書きやCコンパイラについて勉強をしております．
   contents3:
     title: Skill
-    subtitle: beginner
-    text: PHP
+    subtitle: PHP
+    text: 学内就活支援サイト「ヨコキャリ」をPHPで制作しました．所属研究室の研究活動の一環として，本プロジェクトではリーダとして，大学の求人情報などを集めた掲示板型就活支援サイトを開発しました．サーバーサイドをPHPで制作し，テンプレートエンジンにはSkinnyを利用しています．現在は，学内の約2,000人に利用され，保守・運用を行なっています．
   contents4:
     title: Skill
-    subtitle: general
-    text: Python
+    subtitle: Python
+    text: データ分析やスクレイピング，簡単なスクリプトを書きます．本サイトは，テンプレートエンジンにJinja2を用いて，YAMLファイルに記述したテキスト情報をHTMLテンプレートに挿入して，HTMLファイルを生成しています．
+  contents5:
+    title: Skill
+    subtitle: Linux
+    text: Docker, VM, WSLなどのLinux開発環境の知識があります．
